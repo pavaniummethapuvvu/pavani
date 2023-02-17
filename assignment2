@@ -1,0 +1,16 @@
+/write a c program to print 1to n numbers and divisble by k of even numbers and odd numbers
+#include<stdio.h>
+void main()
+{
+	int n=20,i,a,evensum,oddsum;
+	printf("enter the numbers");
+	scanf("%d %d",&n,&a);
+	for(i=1;i<=n;i++)
+	{
+	if(i/a==0)
+	evensum=evensum+i;
+    oddsum=oddsum+i;
+	printf("%d",i);
+    }
+    printf("%d %d\n",evensum,oddsum);
+}
